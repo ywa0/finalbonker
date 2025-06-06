@@ -11,8 +11,10 @@ const server = http.createServer(app);
 // Configure Socket.IO with CORS settings to allow all connections
 const io = socketIo(server, {
     cors: {
-        origin: "*", // Allows connections from any domain
-        methods: ["GET", "POST"]
+        origin: "*", // You can be more specific here if you want, e.g., "http://your-domain.com"
+        methods: ["GET", "POST"],
+        allowedHeaders: ["my-custom-header"],
+        credentials: true
     }
 });
 
