@@ -18,7 +18,7 @@ const io = socketIo(server, {
 const PORT = 3000;
 
 // This correctly serves files from the main project directory
-app.use(express.static(path.join(__dirname, '..'))); 
+app.use(express.static(path.join(__dirname)); 
 // If your server.js is in the root, change the line above to:
 // app.use(express.static(__dirname));
 
