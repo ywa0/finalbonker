@@ -1600,7 +1600,7 @@
     </div>
 
     <!-- Socket.io CDN -->
-    <script src="../cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
     
     <script>
         // Game variables
@@ -1608,6 +1608,7 @@
         const ctx = canvas.getContext('2d', { alpha: false });
         let gameLoopStarted = false;
         let lastFrameTime = 0;
+        let playerUsername = '';
         
         // Missing constants and variables
         const PLAYER_SIZE = 100;
@@ -1716,9 +1717,6 @@
         // Detect server URL automatically
         const serverUrl = 'http://191.101.14.103:3000';
         
-        console.log('Environment detected:', isProduction ? 'production' : 'development');
-        console.log('Server URL:', serverUrl);
-        
         // Game state
         let gameState = {
             players: {},
@@ -1737,7 +1735,6 @@
         };
         
         // Username management
-        let playerUsername = '';
         let usernameSubmitted = false;
 
         // Show username modal on game start
