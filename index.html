@@ -1714,8 +1714,7 @@
         let connectionStatus = 'disconnected';
         
         // Detect server URL automatically
-        const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-        const serverUrl = isProduction ? window.location.origin : 'http://localhost:3000';
+        const serverUrl = 'http://191.101.14.103:3000';
         
         console.log('Environment detected:', isProduction ? 'production' : 'development');
         console.log('Server URL:', serverUrl);
