@@ -18,7 +18,7 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0a0a0a, #1a1200, #0f0800, #1a0f00);
+            background: linear-gradient(135deg, #0a0a0a, #061a00, #000f04, #001a09);
             font-family: 'Orbitron', monospace;
             display: flex;
             justify-content: center;
@@ -37,10 +37,10 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(255, 107, 0, 0.15) 0%, transparent 60%),
-                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 80%, rgba(255, 71, 87, 0.08) 0%, transparent 55%),
-                radial-gradient(circle at 60% 60%, rgba(255, 165, 0, 0.12) 0%, transparent 45%);
+                radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.15) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(102, 255, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(71, 255, 184, 0.08) 0%, transparent 55%),
+                radial-gradient(circle at 60% 60%, rgba(21, 255, 0, 0.12) 0%, transparent 45%);
             pointer-events: none;
             z-index: -1;
         }
@@ -53,12 +53,12 @@
             background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(26, 18, 0, 0.8));
             border-radius: 24px;
             backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 107, 0, 0.2);
+            border: 2px solid rgba(0, 255, 76, 0.2);
             box-shadow: 
                 0 20px 40px rgba(0, 0, 0, 0.6),
-                0 0 30px rgba(255, 107, 0, 0.1),
-                inset 0 1px 0 rgba(255, 215, 0, 0.1),
-                inset 0 -1px 0 rgba(255, 107, 0, 0.1);
+                0 0 30px rgba(0, 255, 21, 0.1),
+                inset 0 1px 0 rgba(0, 255, 0, 0.1),
+                inset 0 -1px 0 rgba(30, 255, 0, 0.1);
             max-width: 98vw;
             max-height: 98vh;
             overflow-y: auto;
@@ -78,12 +78,12 @@
         .game-title {
             font-size: 36px;
             font-weight: 900;
-            background: linear-gradient(135deg, #ff6b00, #ffd700, #ff4757, #ff6b00);
+            background: linear-gradient(135deg, #008f18, #7cf756, #56cc32, #47d605);
             background-size: 300% 300%;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(255, 107, 0, 0.8);
+            text-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
             letter-spacing: 3px;
             animation: bonkGlow 3s ease-in-out infinite alternate, gradientShift 4s ease-in-out infinite;
             text-transform: uppercase;
@@ -91,11 +91,11 @@
         
         @keyframes bonkGlow {
             from { 
-                filter: drop-shadow(0 0 15px rgba(255, 107, 0, 0.8));
+                filter: drop-shadow(0 0 15px rgba(43, 255, 0, 0.8));
                 transform: scale(1);
             }
             to { 
-                filter: drop-shadow(0 0 25px rgba(255, 215, 0, 1));
+                filter: drop-shadow(0 0 25px rgb(164, 255, 78));
                 transform: scale(1.02);
             }
         }
